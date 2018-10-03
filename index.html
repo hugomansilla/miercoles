@@ -7,10 +7,10 @@
 	<style type="text/css">
 		body{ 
 			margin: 0px;
-			background-color: #80808030;
+			background-color: #d6d6d6;
 		 }
 		 .fondo {
-		 	margin: 80px;
+		 	margin: 150px 80px 80px 80px;
 		 	background-color: white;
 		 }
 		 .encabezado{
@@ -22,6 +22,9 @@
 		 }
 		 .fotocv{
 		 	border-radius: 50%;
+		 	position: absolute;
+		 	margin: -150px 0px 0px 480px;
+		 	border: 5px #d6d6d6 solid;
 		 }
 		 nav{
 
@@ -69,13 +72,54 @@
 		 	display: table-cell;
 		 	padding-left: 200px;
 		 }
+		 .progreso1{
+		 	width: 80%;
+		 	height: 20px;
+		 	background-color: #ff5722eb;
+		 	color: white;
+		 	padding-left: 10px;
+
+		 }
+		 .progreso2{
+		 	width: 70%;
+		 	height: 20px;
+		 	background-color: #ff5722eb;
+		 	color: white;
+		 	padding-left: 10px;
+		 }
+		 .progreso3{
+		 	width: 60%;
+		 	height: 20px;
+		 	background-color: #ff5722eb;
+		 	color: white;
+		 	padding-left: 10px;
+		 }
+		 .progreso4{
+		 	width: 50%;
+		 	height: 20px;
+		 	background-color: #ff5722eb;
+		 	color: white;
+		 	padding-left: 10px;
+		 }
+		 .progreso5{
+		 	width: 40%;
+		 	height: 20px;
+		 	background-color: #ff5722eb;
+		 	color: white;
+		 	padding-left: 10px;
+		 }
+		 footer {
+		 	text-align: right; 
+		 	padding-right: 5px; 
+		 	font-size: 12px;
+		 }
 	</style>
 </head>
 <body>
-	<div class="fondo">
+	<div class="fondo" style="position: relative">
+		<img src="imagen link.jpg" alt="fotocv" class="fotocv"><br><br>
 		<nav>
 			<p class="encabezado">
-				<img src="imagen link.jpg" alt="fotocv" class="fotocv"><br><br>
 				<strong>HOLA MI NOMBRE ES <span class="naranja">HUGO</span> Y ESTE ES MI RESUMEN</strong>
 			</p>
 		</nav>
@@ -125,21 +169,11 @@
 			</div>
 			<div class="col2">
 				<h3><span class="naranja">//SKILLS</span></h3>
-				<p>
-					<progress value="90" max="100">
-				</p>
-				<p>
-					<progress value="70" max="100">
-				</p>
-				<p>
-					<progress value="50" max="100">
-				</p>
-				<p>
-					<progress value="30" max="100">
-				</p>
-				<p>
-					<progress value="10" max="100">
-				</p>
+				<p class="progreso1">PYTHON</p>
+				<p class="progreso2">HTML</p>
+				<p class="progreso3">CSS</p>
+				<p class="progreso4">JS</p>
+				<p class="progreso5">PHP</p>
 			</div>
 		</div>
 		<div class="row">
@@ -194,7 +228,10 @@
 				<button class="boton">Karate</button>
 				<button class="boton">Series</button>
 			</div>
-			</div>		
+		</div>		
+		<footer>
+			Curso desarrollo front-end
+		</footer>
 	</div>
 </body>
 </html>
